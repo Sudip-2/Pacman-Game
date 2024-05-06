@@ -29,7 +29,16 @@ h1 {
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    margin-left: 420px;
+    animation: move 5s infinite;
 }
+
+.pacbg{
+    background-color: black;
+    z-index: 1;
+    border-radius: 50%;
+}
+
 
 .paceye {
     background-color: black;
@@ -49,6 +58,71 @@ h1 {
     right: 8px;
     clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
     animation: eat 1s infinite;
+}
+
+.foodofpac {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background: white;
+    border-radius: 50%;
+    top: 382px;
+    left: 600px;
+    animation: blink 1s infinite;
+}
+
+.foodofpac1{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background: white;
+    border-radius: 50%;
+    top: 382px;
+    left: 750px;
+    animation: blink 1s infinite;
+}
+
+.foodofpac2{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background: white;
+    border-radius: 50%;
+    top: 382px;
+    left: 900px;
+    animation: blink 1s infinite;
+}
+
+.foodofpac3{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background: white;
+    border-radius: 50%;
+    top: 382px;
+    left: 1050px;
+    animation: blink 1s infinite;
+}
+
+@keyframes move {
+    
+    0% {
+        margin-left: 420px;
+    }
+    100% {
+        margin-left: 980px;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity:1 ;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
 }
 
 @keyframes eat {
