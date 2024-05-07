@@ -11,17 +11,10 @@ body {
 h1 {
     text-align: center;
     margin-top: 40px;
-    font-family: sans-serif;
+    font-family: "Freeman",sans-serif;
     font-weight: bold;
     font-size: 4.5rem;
     color: white;
-}
-
-.paccontainer {
-    /* border: solid; */
-    height: 70vh;
-    display: flex;
-    align-items: center;
 }
 
 .pacmanbody {
@@ -33,12 +26,11 @@ h1 {
     animation: move 5s infinite;
 }
 
-.pacbg{
+.pacbg {
     background-color: black;
     z-index: 1;
     border-radius: 50%;
 }
-
 
 .paceye {
     background-color: black;
@@ -57,66 +49,63 @@ h1 {
     position: relative;
     right: 8px;
     clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
-    animation: eat 1s infinite;
+    animation: eat 0.5s infinite
 }
 
-.foodofpac {
-    position: absolute;
-    width: 17px;
+.foodpac1,.foodpac2,.foodpac3,.foodpac4,.foodpac5,.foodpac6{
     height: 17px;
-    background: white;
-    border-radius: 50%;
-    top: 382px;
-    left: 600px;
+    width: 17px;
+    background-color: white;
     animation: blink 1s infinite;
+    border-radius: 50%;
+    position: fixed;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 650px;
+    z-index: -1;
 }
 
-.foodofpac1{
-    position: absolute;
-    width: 17px;
-    height: 17px;
-    background: white;
-    border-radius: 50%;
-    top: 382px;
-    left: 750px;
-    animation: blink 1s infinite;
+.foodpac2 {
+    margin-left: 750px;
 }
 
-.foodofpac2{
-    position: absolute;
-    width: 17px;
-    height: 17px;
-    background: white;
-    border-radius: 50%;
-    top: 382px;
-    left: 900px;
-    animation: blink 1s infinite;
+.foodpac3 {
+    margin-left: 850px;
 }
 
-.foodofpac3{
-    position: absolute;
-    width: 17px;
-    height: 17px;
-    background: white;
-    border-radius: 50%;
-    top: 382px;
-    left: 1050px;
-    animation: blink 1s infinite;
+.foodpac4 {
+    margin-left: 950px;
+}
+
+.foodpac5 {
+    margin-left: 1050px;
+}
+
+.foodpac6 {
+    margin-left: 1150px;
+}
+
+.paccontainer {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    height: 70vh;
 }
 
 @keyframes move {
-    
+
     0% {
         margin-left: 420px;
     }
+
     100% {
-        margin-left: 980px;
+        margin-left: 1100px;
     }
 }
 
 @keyframes blink {
     0% {
-        opacity:1 ;
+        opacity: 1;
     }
 
     100% {
